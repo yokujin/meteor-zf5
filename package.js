@@ -6,11 +6,14 @@ Package.describe({
 });
 
 Package.onUse(function (api) {
-    api.imply('fourseven:scss@3.2.0');
-	api.use([
-		'jquery@1.0.0',
-		'fourseven:scss@3.2.0',
-	], 'client');
+    api.imply('fourseven:scss@3.3.99');
+    api.use([
+        'jquery@1.0.0',
+        'fourseven:scss@3.3.99',
+    ], 'client');
+    api.use([
+        'fourseven:scss@3.3.99',
+    ], 'server');
 
 	api.addFiles([
         'js/vendor/modernizr.js',
