@@ -15,13 +15,12 @@ Package.onUse(function (api) {
         'fourseven:scss@3.3.99',
     ], 'server');
 
-	api.addFiles([
+    api.addFiles([
         'js/vendor/modernizr.js',
         'js/foundation.js'
-	], 'client');
+    ], 'client');
 
     api.addFiles([
-
         'scss/normalize.scss',
         'scss/foundation.scss',
 
@@ -72,5 +71,5 @@ Package.onUse(function (api) {
         'scss/foundation/components/_alert-boxes.scss',
         'scss/foundation/components/_accordion.scss'
 
-    ], 'server');
+    ], 'client');
 });
